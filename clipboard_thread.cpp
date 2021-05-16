@@ -3,7 +3,11 @@
 #include <System.hpp>
 #pragma hdrstop
 
+#include "clipboard_init.h"
 #include "clipboard_thread.h"
+#include "listboxitem.h"
+#include "steam_id.h"
+#include "main.h"
 
 // ---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -46,8 +50,8 @@ void __fastcall TClipboardWt::UpdateListBox( )
 	{
 		return;
 	}
-	Form1->ListBox1->Clear( );
 	Form1->ListBox1->BeginUpdate( );
+	Form1->ListBox1->Clear( );
 	for ( int i = 0; i < ListCount; i++ )
 	{
 		Application->ProcessMessages( );

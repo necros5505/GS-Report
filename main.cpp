@@ -4,6 +4,10 @@
 #pragma hdrstop
 
 #include "main.h"
+#include "clipboard_thread.h"
+#include "clipboard_init.h"
+#include "settings.h"
+#include "steam_id.h"
 
 // ---------------------------------------------------------------------------
 #pragma package(smart_init)

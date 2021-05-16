@@ -21,7 +21,8 @@ void InitCService( )
 
 System::UnicodeString GetCText( )
 {
-	return ClService->HasText( ) ? ClService->GetText( ) : "";
+	if( ClService->HasText( ) )return ClService->GetText( );
+	return "";
 }
 
 void SetCText( System::UnicodeString Text )

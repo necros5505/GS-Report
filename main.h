@@ -21,10 +21,6 @@
 #include <FMX.Menus.hpp>
 #include <System.UITypes.hpp>
 
-#include "clipboard_thread.h"
-#include "clipboard_init.h"
-#include "settings.h"
-
 // ---------------------------------------------------------------------------
 class TForm1 : public TForm
 {

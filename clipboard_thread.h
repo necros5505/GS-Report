@@ -7,9 +7,6 @@
 
 #include <System.Classes.hpp>
 
-#include "main.h"
-#include "steam_id.h"
-
 // ---------------------------------------------------------------------------
 
 class TClipboardWt : public TThread
