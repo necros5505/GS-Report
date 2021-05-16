@@ -1,0 +1,363 @@
+object Form2: TForm2
+  Left = 660
+  Top = 150
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Settings'
+  ClientHeight = 525
+  ClientWidth = 850
+  Fill.Kind = Solid
+  Position = DesktopCenter
+  SystemStatusBar.Visibility = Invisible
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  Left = 660
+  Top = 150
+  DesignerMasterStyle = 0
+  object CheckBox1: TCheckBox
+    StyledSettings = [FontColor]
+    IsChecked = True
+    Position.X = 8.000000000000000000
+    Position.Y = 416.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Clear "What happened" field'
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+  end
+  object ListBox1: TListBox
+    Position.X = 8.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 361.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    OnDblClick = ListBox1DblClick
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 265.000000000000000000
+    Viewport.Height = 361.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    Text = ','
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    Position.X = 104.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+  end
+  object Label1: TLabel
+    StyledSettings = [FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Text = 'Tag separator:'
+    TabOrder = 21
+  end
+  object Button1: TButton
+    Position.X = 112.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'additembutton'
+    TabOrder = 0
+    Text = 'Add'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'trashtoolbutton'
+    TabOrder = 1
+    Text = 'Remove'
+    OnClick = Button2Click
+  end
+  object CheckBox2: TCheckBox
+    StyledSettings = [FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 440.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'Alternating background for Nick / Id list'
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    OnChange = CheckBox2Change
+  end
+  object Button3: TButton
+    Position.X = 200.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'arrowuptoolbutton'
+    TabOrder = 2
+    Text = 'Up'
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'arrowdowntoolbutton'
+    TabOrder = 3
+    Text = 'Down'
+    OnClick = Button4Click
+  end
+  object Label2: TLabel
+    StyledSettings = [FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Text = 'Server list:'
+    TabOrder = 24
+  end
+  object ListBox2: TListBox
+    Position.X = 288.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 361.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    OnDblClick = ListBox2DblClick
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 265.000000000000000000
+    Viewport.Height = 361.000000000000000000
+  end
+  object Button5: TButton
+    Position.X = 480.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'arrowuptoolbutton'
+    TabOrder = 7
+    Text = 'Up'
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Position.X = 520.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'arrowdowntoolbutton'
+    TabOrder = 8
+    Text = 'Down'
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Position.X = 392.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'additembutton'
+    TabOrder = 5
+    Text = 'Add'
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Position.X = 432.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'trashtoolbutton'
+    TabOrder = 6
+    Text = 'Remove'
+    OnClick = Button8Click
+  end
+  object Label3: TLabel
+    StyledSettings = [FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Text = 'Tag list:'
+    TabOrder = 23
+  end
+  object Button9: TButton
+    StyledSettings = [FontColor]
+    Position.X = 720.000000000000000000
+    Position.Y = 488.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    Text = 'Save and Close'
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    OnClick = Button9Click
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 16
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Position.X = 288.000000000000000000
+    Position.Y = 440.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [FontColor]
+  end
+  object Label4: TLabel
+    StyledSettings = [FontColor]
+    Position.X = 288.000000000000000000
+    Position.Y = 416.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Text = 'Screenshots location'
+    TabOrder = 26
+  end
+  object Label5: TLabel
+    StyledSettings = [FontColor]
+    Position.X = 568.000000000000000000
+    Position.Y = 416.000000000000000000
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Text = 'Videos location'
+    TabOrder = 27
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 18
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Position.X = 568.000000000000000000
+    Position.Y = 440.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [FontColor]
+  end
+  object Button10: TButton
+    StyledSettings = [FontColor]
+    Position.X = 528.000000000000000000
+    Position.Y = 440.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    Text = '...'
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    OnClick = Button10Click
+  end
+  object Button11: TButton
+    StyledSettings = [FontColor]
+    Position.X = 816.000000000000000000
+    Position.Y = 440.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Text = '...'
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    OnClick = Button11Click
+  end
+  object CheckBox3: TCheckBox
+    StyledSettings = [FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 496.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    Text = 'Select last screenshot'
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    StyledSettings = []
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Position.X = 568.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 361.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Viewport.Width = 273.000000000000000000
+    Viewport.Height = 361.000000000000000000
+  end
+  object Label6: TLabel
+    StyledSettings = [FontColor]
+    Position.X = 568.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Text = 'Report Format:'
+    TabOrder = 22
+  end
+  object Button12: TButton
+    Position.X = 808.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'refreshtoolbutton'
+    TabOrder = 10
+    Text = 'Add'
+    OnClick = Button12Click
+  end
+end

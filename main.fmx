@@ -1,0 +1,322 @@
+object Form1: TForm1
+  Left = 480
+  Top = 150
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'GS Report'
+  ClientHeight = 538
+  ClientWidth = 842
+  Fill.Kind = Solid
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  Left = 480
+  Top = 150
+  DesignerMasterStyle = 0
+  object Layout2: TLayout
+    Align = Client
+    Locked = True
+    Size.Width = 416.000000000000000000
+    Size.Height = 538.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    TabStop = False
+    object Button1: TButton
+      StyledSettings = [FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 450.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Videos'
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00020000000000000004000000}
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      StyledSettings = [FontColor]
+      Position.X = 144.000000000000000000
+      Position.Y = 450.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Screenshots'
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00020000000000000004000000}
+      OnClick = Button2Click
+    end
+    object Label2: TLabel
+      AutoSize = True
+      StyledSettings = [FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'Player Name:'
+      TabOrder = 1
+      TabStop = False
+    end
+    object Label3: TLabel
+      AutoSize = True
+      StyledSettings = [FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'What happened:'
+      TabOrder = 3
+      TabStop = False
+    end
+    object Label4: TLabel
+      AutoSize = True
+      StyledSettings = [FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'SteamId:'
+      TabOrder = 5
+      TabStop = False
+    end
+    object Label5: TLabel
+      AutoSize = True
+      StyledSettings = [FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 424.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'Evidence:'
+      TabOrder = 8
+      TabStop = False
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      StyledSettings = [FontColor]
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00020000000000000004000000}
+      Position.X = 8.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 401.000000000000000000
+      Size.Height = 273.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Viewport.Width = 397.000000000000000000
+      Viewport.Height = 269.000000000000000000
+    end
+    object ComboEdit1: TComboEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      ItemHeight = 19.000000000000000000
+      ItemIndex = -1
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00020000000000000004000000}
+      Position.X = 136.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyledSettings = [FontColor]
+      Size.Width = 273.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      AutoSize = True
+      StyledSettings = [FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'Server Name:'
+      TabOrder = 9
+      TabStop = False
+    end
+    object Layout1: TLayout
+      Align = Bottom
+      Position.Y = 492.000000000000000000
+      Size.Width = 416.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      TabStop = False
+      object Button4: TButton
+        StyledSettings = [FontColor]
+        Position.X = 6.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 131.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Settings'
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00020000000000000004000000}
+        OnClick = Button4Click
+      end
+      object Switch1: TSwitch
+        Cursor = crHandPoint
+        IsChecked = True
+        Position.X = 368.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 38.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        OnSwitch = Switch1Switch
+      end
+      object Label6: TLabel
+        Cursor = crHandPoint
+        StyledSettings = []
+        FocusControl = Switch1
+        HitTest = True
+        Position.X = 248.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00020000000000000004000000}
+        Text = 'Track clipboard'
+        TabOrder = 0
+        TabStop = False
+        OnClick = Label6Click
+      end
+    end
+    object Button3: TButton
+      StyledSettings = [FontColor]
+      Position.X = 280.000000000000000000
+      Position.Y = 450.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Copy report'
+      TextSettings.Font.Family = 'Roboto'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00020000000000000004000000}
+      OnClick = Button3Click
+    end
+    object Popup1: TPopup
+      DragWithParent = True
+      PlacementTarget = Button5
+      Position.X = 232.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 225.000000000000000000
+      Size.Height = 273.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 11
+      OnPopup = OnPopup
+    end
+  end
+  object Layout3: TLayout
+    Align = Right
+    Position.X = 416.000000000000000000
+    Size.Width = 426.000000000000000000
+    Size.Height = 538.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    TabStop = False
+    object ListBox1: TListBox
+      Align = Client
+      Margins.Left = 7.000000000000000000
+      Margins.Top = 7.000000000000000000
+      Margins.Right = 7.000000000000000000
+      Margins.Bottom = 7.000000000000000000
+      Size.Width = 412.000000000000000000
+      Size.Height = 524.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      OnDblClick = ListBox1DblClick
+      OnMouseDown = ListBox1MouseDown
+      DisableFocusEffect = True
+      ItemHeight = 30.000000000000000000
+      DefaultItemStyles.ItemStyle = 'listboxitemrightdetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 408.000000000000000000
+      Viewport.Height = 520.000000000000000000
+    end
+  end
+  object Button5: TButton
+    StyledSettings = [FontColor]
+    Position.X = 312.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Quick tags'
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    OnClick = Button5Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Position.X = 136.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [FontColor]
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    Position.X = 136.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [FontColor]
+  end
+  object PopupMenu1: TPopupMenu
+    OnPopup = PopupMenu1Popup
+    Left = 600
+    Top = 248
+    object MenuItem1: TMenuItem
+      Text = 'Copy player name'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem2: TMenuItem
+      Text = 'Copy SteamId'
+      OnClick = MenuItem2Click
+    end
+    object MenuItem3: TMenuItem
+      Text = '-'
+    end
+    object MenuItem4: TMenuItem
+      Text = 'Copy Community URL'
+      OnClick = MenuItem4Click
+    end
+  end
+end

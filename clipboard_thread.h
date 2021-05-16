@@ -1,0 +1,37 @@
+// ---------------------------------------------------------------------------
+
+#ifndef clipboard_threadH
+#define clipboard_threadH
+
+// ---------------------------------------------------------------------------
+
+#include <System.Classes.hpp>
+
+#include "main.h"
+#include "steam_id.h"
+
+// ---------------------------------------------------------------------------
+
+class TClipboardWt : public TThread
+{
+private:
+	bool FCanAdd;
+	bool FPause;
+	TStringList * FList;
+
+	void __fastcall UpdateListBox( );
+
+protected:
+	void __fastcall Execute( );
+
+public:
+	__fastcall TClipboardWt( bool CreateSuspended );
+	__property bool IsPaused =
+	{
+		read = FPause,
+		write = FPause
+	} ;
+} ;
+// ---------------------------------------------------------------------------
+
+#endif

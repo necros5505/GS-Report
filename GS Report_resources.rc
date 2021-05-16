@@ -1,0 +1,3 @@
+_REPORT_FORMAT_RES RCDATA "reportformat.txt"
+_SERVERLIST_RES RCDATA "serverlist.txt"
+_TAGS_RES RCDATA "tags.txt"

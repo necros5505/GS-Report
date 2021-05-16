@@ -1,0 +1,5 @@
+Server name: %SERVER_NAME%
+Who are you reporting?: %PLAYER_NAME%
+His SteamId: %HIS_STEAMID%
+What happened?: %WHAT_HAPPENED%
+Evidence:
